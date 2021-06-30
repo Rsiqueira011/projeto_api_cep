@@ -1,0 +1,102 @@
+﻿@model NegocieOnlineAPI.Models.ViaCEPResult
+
+@{
+    Layout = null;
+    ViewData["Title"] = "Consulta WS";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewData["Title"]</title>
+</head>
+<body>
+    <p>
+        @Html.ActionLink("Voltar", "Index")
+    </p>
+    <table class="table" border="1">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.cep)
+            </th>
+            <th>
+                @Html.DisplayFor(model => model.cep)
+            </th>
+        </tr>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.logradouro)
+            </th>
+            <th>
+                @Html.DisplayFor(model => model.logradouro)
+            </th>
+        </tr>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.complemento)
+            </th>
+            <th>
+                @Html.DisplayFor(model => model.complemento)
+            </th>
+        </tr>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.bairro)
+            </th>
+            <th>
+                @Html.DisplayFor(model => model.bairro)
+            </th>
+        </tr>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.localidade)
+            </th>
+            <th>
+                @Html.DisplayFor(model => model.localidade)
+            </th>
+        </tr>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.uf)
+            </th>
+            <th>
+                @Html.DisplayFor(model => model.uf)
+            </th>
+        </tr>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.ibge)
+            </th>
+            <th>
+                @Html.DisplayFor(model => model.ibge)
+            </th>
+        </tr>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.gia)
+            </th>
+            <th>
+                @Html.DisplayFor(model => model.gia)
+            </th>
+        </tr>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.ddd)
+            </th>
+            <th>
+                @Html.DisplayFor(model => model.ddd)
+            </th>
+        </tr>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.siafi)
+            </th>
+            <th>
+                @Html.DisplayFor(model => model.siafi)
+            </th>
+        </tr>
+    </table>
+</body>
+</html>
